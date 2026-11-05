@@ -184,7 +184,7 @@
   function getKioskPin() {
     var savedPin = localStorage.getItem("SCHOOL_KIOSK_PIN");
     if (!savedPin) {
-      savedPin = prompt("🔑 Device Setup Required:\n\nPlease enter School Kiosk Security PIN (Default: 7860):");
+      savedPin = prompt("🔑 Device Setup Required:\n\nPlease enter School Kiosk Security PIN (Default: 0000):");
       if (savedPin) {
         localStorage.setItem("SCHOOL_KIOSK_PIN", savedPin.trim());
       }
